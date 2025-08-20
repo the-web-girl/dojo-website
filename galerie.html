@@ -1,11 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galerie Photos - Club de Judo | Moments Forts et Entraînements</title>
+    <meta name="description" content="Découvrez en images la vie de notre club de judo : entraînements, compétitions, passages de grades et moments de convivialité.">
+    <meta name="keywords" content="photos judo, galerie club, entraînements judo, compétitions, passages grades, judokas">
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/judo-logo.png" alt="Logo Club de Judo" class="nav-logo">
+                <span class="nav-title">Club de Judo</span>
+            </div>
+            
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu de navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="a-propos.html" class="nav-link" role="menuitem">À propos</a></li>
+                <li role="none"><a href="cours.html" class="nav-link" role="menuitem">Cours</a></li>
+                <li role="none"><a href="evenements.html" class="nav-link" role="menuitem">Événements</a></li>
+                <li role="none"><a href="galerie.html" class="nav-link active" role="menuitem" aria-current="page">Galerie</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main">
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title" class="page-title">Galerie Photos</h1>
+                <p class="page-subtitle">Les moments forts de la vie du club</p>
+            </div>
+        </section>
+
+        <section class="gallery-filters" aria-labelledby="filters-title">
+            <div class="container">
+                <h2 id="filters-title" class="sr-only">Filtres de la galerie</h2>
+                <div class="filter-buttons" role="group" aria-label="Filtrer les photos par catégorie">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">Toutes</button>
+                    <button class="filter-btn" data-filter="training" aria-pressed="false">Entraînements</button>
+                    <button class="filter-btn" data-filter="competition" aria-pressed="false">Compétitions</button>
+                    <button class="filter-btn" data-filter="grades" aria-pressed="false">Passages de Grades</button>
+                    <button class="filter-btn" data-filter="events" aria-pressed="false">Événements</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-grid-section" aria-labelledby="gallery-title">
+            <div class="container">
+                <h2 id="gallery-title" class="sr-only">Photos du club</h2>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Training Photos -->
+                    <article class="gallery-item" data-category="training">
+                        <img src="assets/hero-judo.jpg" alt="Entraînement technique sur tatami avec le sensei" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Entraînement Technique</h3>
+                            <p class="gallery-description">Cours avancé avec perfectionnement des techniques de projection</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="training">
+                        <img src="assets/hero-judo.jpg" alt="Cours enfants avec exercices d'échauffement ludiques" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Cours Enfants</h3>
+                            <p class="gallery-description">Séance d'échauffement avec les plus jeunes judokas</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="training">
+                        <img src="assets/hero-judo.jpg" alt="Démonstration de kata traditionnel par les sensei" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Démonstration Kata</h3>
+                            <p class="gallery-description">Présentation de kata traditionnel par nos maîtres</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Competition Photos -->
+                    <article class="gallery-item" data-category="competition">
+                        <img src="assets/hero-judo.jpg" alt="Combat de compétition officielle avec arbitre" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Championnat Régional</h3>
+                            <p class="gallery-description">Nos compétiteurs en action lors du championnat régional</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="competition">
+                        <img src="assets/hero-judo.jpg" alt="Cérémonie de remise des médailles sur podium" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Podium des Champions</h3>
+                            <p class="gallery-description">Cérémonie de remise des médailles - Tournoi inter-clubs</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="competition">
+                        <img src="assets/hero-judo.jpg" alt="Équipe du club posant fièrement avec leurs médailles" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Équipe Victorieuse</h3>
+                            <p class="gallery-description">Notre équipe jeunes après leur succès en compétition</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Grades Photos -->
+                    <article class="gallery-item" data-category="grades">
+                        <img src="assets/hero-judo.jpg" alt="Cérémonie solennelle de passage de ceinture noire" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Passage Ceinture Noire</h3>
+                            <p class="gallery-description">Moment solennel du passage de ceinture noire</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="grades">
+                        <img src="assets/hero-judo.jpg" alt="Enfants fiers montrant leurs nouvelles ceintures colorées" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Fierté des Jeunes</h3>
+                            <p class="gallery-description">Nos jeunes judokas et leurs nouvelles ceintures</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="grades">
+                        <img src="assets/hero-judo.jpg" alt="Photo de groupe après session de passages de grades" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Session de Grades</h3>
+                            <p class="gallery-description">Photo de groupe après les examens de passage</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Events Photos -->
+                    <article class="gallery-item" data-category="events">
+                        <img src="assets/hero-judo.jpg" alt="Stage technique avec maître japonais invité" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Stage avec Maître Tanaka</h3>
+                            <p class="gallery-description">Stage exceptionnel avec notre invité du Japon</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="events">
+                        <img src="assets/hero-judo.jpg" alt="Repas convivial de fin d'année du club" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Repas de Fin d'Année</h3>
+                            <p class="gallery-description">Moment de convivialité entre tous les membres</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="events">
+                        <img src="assets/hero-judo.jpg" alt="Démonstration publique lors de la fête du sport" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Démonstration Publique</h3>
+                            <p class="gallery-description">Présentation du judo lors de la fête du sport</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="gallery-item" data-category="training">
+                        <img src="assets/hero-judo.jpg" alt="Cours adultes débutants apprenant les chutes" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Cours Adultes Débutants</h3>
+                            <p class="gallery-description">Apprentissage des chutes en toute sécurité</p>
+                            <button class="gallery-view" data-image="assets/hero-judo.jpg" aria-label="Voir l'image en grand">
+                                <span class="sr-only">Agrandir l'image</span>
+                                🔍
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true">
+            <div class="lightbox-overlay" role="button" tabindex="0" aria-label="Fermer la galerie"></div>
+            <div class="lightbox-container">
+                <button class="lightbox-close" aria-label="Fermer l'image agrandie">×</button>
+                <button class="lightbox-prev" aria-label="Image précédente">‹</button>
+                <button class="lightbox-next" aria-label="Image suivante">›</button>
+                <div class="lightbox-content">
+                    <img class="lightbox-image" alt="" id="lightbox-img">
+                    <div class="lightbox-info">
+                        <h3 class="lightbox-title" id="lightbox-title"></h3>
+                        <p class="lightbox-description" id="lightbox-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Club de Judo</h3>
+                    <p class="footer-description">
+                        Excellence, tradition et valeurs martiales depuis 30 ans.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <address class="footer-address">
+                        <p>123 Rue du Dojo, 75000 Paris</p>
+                        <p>Tél: <a href="tel:+33123456789">01 23 45 67 89</a></p>
+                        <p>Email: <a href="mailto:contact@clubjudo.fr">contact@clubjudo.fr</a></p>
+                    </address>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Horaires</h3>
+                    <div class="footer-hours">
+                        <p>Lundi - Vendredi: 18h - 21h</p>
+                        <p>Samedi: 14h - 18h</p>
+                        <p>Dimanche: Fermé</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Club de Judo. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
