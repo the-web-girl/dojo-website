@@ -1,11 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>À Propos - Club de Judo | Histoire et Enseignants</title>
+    <meta name="description" content="Découvrez l'histoire de notre club de judo, nos enseignants diplômés et notre philosophie. 30 ans d'expérience dans l'enseignement des arts martiaux.">
+    <meta name="keywords" content="histoire club judo, enseignants judo, professeurs arts martiaux, ceinture noire, dojo Paris">
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/judo-logo.png" alt="Logo Club de Judo" class="nav-logo">
+                <span class="nav-title">Club de Judo</span>
+            </div>
+            
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu de navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="a-propos.html" class="nav-link active" role="menuitem" aria-current="page">À propos</a></li>
+                <li role="none"><a href="cours.html" class="nav-link" role="menuitem">Cours</a></li>
+                <li role="none"><a href="evenements.html" class="nav-link" role="menuitem">Événements</a></li>
+                <li role="none"><a href="galerie.html" class="nav-link" role="menuitem">Galerie</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main">
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title" class="page-title">À Propos du Club</h1>
+                <p class="page-subtitle">Notre histoire, nos valeurs, nos enseignants</p>
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="history-title">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h2 id="history-title" class="section-title">Notre Histoire</h2>
+                        <div class="section-divider"></div>
+                        <p class="content-paragraph">
+                            Fondé en 1994, notre club de judo s'est construit autour des valeurs traditionnelles 
+                            de cet art martial japonais. Pendant plus de 30 ans, nous avons formé des centaines 
+                            d'élèves, des plus jeunes aux plus expérimentés.
+                        </p>
+                        <p class="content-paragraph">
+                            Notre dojo, situé au cœur de Paris, offre un environnement propice à l'apprentissage 
+                            et au développement personnel. Nous privilégions une approche respectueuse et 
+                            bienveillante, fidèle à l'esprit du judo.
+                        </p>
+                        <p class="content-paragraph">
+                            Au fil des années, notre club a vu naître de nombreux champions régionaux et nationaux, 
+                            mais surtout des pratiquants épanouis qui ont intégré les valeurs du judo dans leur 
+                            vie quotidienne.
+                        </p>
+                    </div>
+                    <div class="content-image">
+                        <img src="assets/hero-judo.jpg" alt="Photo historique du dojo" class="responsive-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teachers-section" aria-labelledby="teachers-title">
+            <div class="container">
+                <h2 id="teachers-title" class="section-title">Nos Enseignants</h2>
+                <div class="section-divider"></div>
+                <div class="teachers-grid">
+                    <article class="teacher-card">
+                        <div class="teacher-photo">
+                            <img src="assets/hero-judo.jpg" alt="Photo de Sensei Martin Dubois" class="teacher-image">
+                        </div>
+                        <div class="teacher-info">
+                            <h3 class="teacher-name">Martin Dubois</h3>
+                            <p class="teacher-grade">Ceinture Noire 6ème Dan</p>
+                            <p class="teacher-title">Directeur Technique</p>
+                            <p class="teacher-description">
+                                Champion de France, Martin enseigne le judo depuis plus de 25 ans. 
+                                Diplômé d'État, il transmet sa passion avec pédagogie et exigence.
+                            </p>
+                            <ul class="teacher-specialties">
+                                <li>Formation compétition</li>
+                                <li>Judo traditionnel</li>
+                                <li>Passage de grades</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="teacher-card">
+                        <div class="teacher-photo">
+                            <img src="assets/hero-judo.jpg" alt="Photo de Sophie Laurent" class="teacher-image">
+                        </div>
+                        <div class="teacher-info">
+                            <h3 class="teacher-name">Sophie Laurent</h3>
+                            <p class="teacher-grade">Ceinture Noire 4ème Dan</p>
+                            <p class="teacher-title">Professeure Jeunes</p>
+                            <p class="teacher-description">
+                                Spécialisée dans l'enseignement aux enfants, Sophie crée un environnement 
+                                ludique et sécurisé pour l'apprentissage du judo.
+                            </p>
+                            <ul class="teacher-specialties">
+                                <li>Judo enfants (4-12 ans)</li>
+                                <li>Éveil martial</li>
+                                <li>Psychomotricité</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="teacher-card">
+                        <div class="teacher-photo">
+                            <img src="assets/hero-judo.jpg" alt="Photo de Kenji Tanaka" class="teacher-image">
+                        </div>
+                        <div class="teacher-info">
+                            <h3 class="teacher-name">Kenji Tanaka</h3>
+                            <p class="teacher-grade">Ceinture Noire 5ème Dan</p>
+                            <p class="teacher-title">Maître Invité</p>
+                            <p class="teacher-description">
+                                Originaire du Japon, Kenji nous fait l'honneur de partager son expertise 
+                                du judo traditionnel lors de stages mensuels.
+                            </p>
+                            <ul class="teacher-specialties">
+                                <li>Techniques avancées</li>
+                                <li>Kata traditionnel</li>
+                                <li>Culture japonaise</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy-section" aria-labelledby="philosophy-title">
+            <div class="container">
+                <h2 id="philosophy-title" class="section-title">Notre Philosophie</h2>
+                <div class="section-divider"></div>
+                <div class="philosophy-content">
+                    <blockquote class="philosophy-quote">
+                        <p>
+                            "Le judo n'est pas seulement un sport, c'est une école de vie qui forme 
+                            le caractère et développe les qualités humaines."
+                        </p>
+                        <cite>Jigoro Kano, Fondateur du Judo</cite>
+                    </blockquote>
+                    
+                    <div class="philosophy-principles">
+                        <div class="principle">
+                            <h3 class="principle-title">Jita Kyoei (Prospérité mutuelle)</h3>
+                            <p class="principle-description">
+                                L'entraide et le respect mutuel sont essentiels pour progresser ensemble.
+                            </p>
+                        </div>
+                        <div class="principle">
+                            <h3 class="principle-title">Seiryoku Zenyo (Maximum d'efficacité)</h3>
+                            <p class="principle-description">
+                                Utiliser au mieux son énergie, tant physique que mentale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Club de Judo</h3>
+                    <p class="footer-description">
+                        Excellence, tradition et valeurs martiales depuis 30 ans.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <address class="footer-address">
+                        <p>123 Rue du Dojo, 75000 Paris</p>
+                        <p>Tél: <a href="tel:+33123456789">01 23 45 67 89</a></p>
+                        <p>Email: <a href="mailto:contact@clubjudo.fr">contact@clubjudo.fr</a></p>
+                    </address>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Horaires</h3>
+                    <div class="footer-hours">
+                        <p>Lundi - Vendredi: 18h - 21h</p>
+                        <p>Samedi: 14h - 18h</p>
+                        <p>Dimanche: Fermé</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Club de Judo. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
