@@ -1,11 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=7, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Judo - Excellence & Tradition | Arts Martiaux Paris</title>
+    <meta name="description" content="Club de judo traditionnel à Paris. Cours pour tous âges et niveaux. 30 ans d'expérience, enseignants diplômés, valeurs authentiques du judo japonais.">
+    <meta name="author" content="Club de Judo">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Club de Judo - Excellence & Tradition | Arts Martiaux Paris">
+    <meta property="og:description" content="Club de judo traditionnel à Paris. Cours pour tous âges et niveaux. 30 ans d'expérience, enseignants diplômés, valeurs authentiques du judo japonais.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero-judo.jpg">
+    
+    <!-- SEO -->
+    <meta name="keywords" content="judo, arts martiaux, Paris, club, cours, enfants, adultes, compétition, tradition japonaise, ceinture noire, tatami, dojo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://the-web-girl.github.io/dojo-website/">
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/judo-logo.png" alt="Logo Club de Judo" class="nav-logo">
+                <span class="nav-title">Club de Judo</span>
+            </div>
+            
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu de navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link active" role="menuitem" aria-current="page">Accueil</a></li>
+                <li role="none"><a href="a-propos.html" class="nav-link" role="menuitem">À propos</a></li>
+                <li role="none"><a href="cours.html" class="nav-link" role="menuitem">Cours</a></li>
+                <li role="none"><a href="evenements.html" class="nav-link" role="menuitem">Événements</a></li>
+                <li role="none"><a href="galerie.html" class="nav-link" role="menuitem">Galerie</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="container">
+                    <h1 id="hero-title" class="hero-title">Bienvenue au Club de Judo</h1>
+                    <p class="hero-subtitle">Excellence, Tradition et Valeurs Martiales</p>
+                    <p class="hero-description">
+                        Découvrez l'art du judo dans un environnement respectueux et bienveillant. 
+                        Nos cours s'adressent à tous les âges et tous les niveaux.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="cours.html" class="btn btn-primary">Nos Cours</a>
+                        <a href="contact.html" class="btn btn-secondary">Nous Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section" aria-labelledby="values-title">
+            <div class="container">
+                <h2 id="values-title" class="section-title">Les Valeurs du Judo</h2>
+                <div class="section-divider"></div>
+                <div class="values-grid">
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">🙏</div>
+                        <h3 class="value-title">Respect</h3>
+                        <p class="value-description">
+                            Le respect de soi, de son partenaire et des règles est fondamental dans la pratique du judo.
+                        </p>
+                    </article>
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">💪</div>
+                        <h3 class="value-title">Courage</h3>
+                        <p class="value-description">
+                            Faire de son mieux dans toutes les situations, sur et en dehors du tatami.
+                        </p>
+                    </article>
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">🎯</div>
+                        <h3 class="value-title">Discipline</h3>
+                        <p class="value-description">
+                            La régularité et la persévérance dans l'entraînement forgent le caractère.
+                        </p>
+                    </article>
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">🤝</div>
+                        <h3 class="value-title">Amitié</h3>
+                        <p class="value-description">
+                            L'entraide et la solidarité créent un environnement propice au progrès.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section" aria-labelledby="info-title">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-content">
+                        <h2 id="info-title" class="section-title">Pourquoi Choisir Notre Club ?</h2>
+                        <div class="section-divider"></div>
+                        <ul class="info-list">
+                            <li class="info-item">
+                                <strong>30 ans d'expérience</strong> dans l'enseignement du judo traditionnel
+                            </li>
+                            <li class="info-item">
+                                <strong>Enseignants qualifiés</strong> diplômés d'État et ceintures noires
+                            </li>
+                            <li class="info-item">
+                                <strong>Cours adaptés</strong> à tous les âges : enfants dès 4 ans, adultes
+                            </li>
+                            <li class="info-item">
+                                <strong>Compétitions</strong> pour ceux qui souhaitent se mesurer
+                            </li>
+                            <li class="info-item">
+                                <strong>Ambiance conviviale</strong> et respect des valeurs du judo
+                            </li>
+                        </ul>
+                        <a href="a-propos.html" class="btn btn-primary">En Savoir Plus</a>
+                    </div>
+                    <div class="info-image">
+                        <img src="assets/hero-judo.jpg" alt="Judokas s'entraînant sur tatami" class="responsive-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Club de Judo</h3>
+                    <p class="footer-description">
+                        Excellence, tradition et valeurs martiales depuis 30 ans.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <address class="footer-address">
+                        <p>123 Rue du Dojo, 75000 Paris</p>
+                        <p>Tél: <a href="tel:+33123456789">01 23 45 67 89</a></p>
+                        <p>Email: <a href="mailto:contact@clubjudo.fr">contact@clubjudo.fr</a></p>
+                    </address>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Horaires</h3>
+                    <div class="footer-hours">
+                        <p>Lundi - Vendredi: 18h - 21h</p>
+                        <p>Samedi: 14h - 18h</p>
+                        <p>Dimanche: Fermé</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Club de Judo. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
