@@ -1,11 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact et Inscription - Club de Judo | Nous Rejoindre</title>
+    <meta name="description" content="Contactez notre club de judo et inscrivez-vous à nos cours. Adresse, téléphone, email et formulaire de contact. Informations pratiques pour nous rejoindre.">
+    <meta name="keywords" content="contact club judo, inscription judo, adresse dojo, téléphone club, email judo, formulaire contact">
+    
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/judo-logo.png" alt="Logo Club de Judo" class="nav-logo">
+                <span class="nav-title">Club de Judo</span>
+            </div>
+            
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu de navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="a-propos.html" class="nav-link" role="menuitem">À propos</a></li>
+                <li role="none"><a href="cours.html" class="nav-link" role="menuitem">Cours</a></li>
+                <li role="none"><a href="evenements.html" class="nav-link" role="menuitem">Événements</a></li>
+                <li role="none"><a href="galerie.html" class="nav-link" role="menuitem">Galerie</a></li>
+                <li role="none"><a href="contact.html" class="nav-link active" role="menuitem" aria-current="page">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main">
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title" class="page-title">Contact et Inscription</h1>
+                <p class="page-subtitle">Rejoignez-nous et découvrez le judo traditionnel</p>
+            </div>
+        </section>
+
+        <section class="contact-info-section" aria-labelledby="contact-info-title">
+            <div class="container">
+                <h2 id="contact-info-title" class="section-title">Nos Coordonnées</h2>
+                <div class="section-divider"></div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">📍</div>
+                        <h3 class="contact-title">Adresse</h3>
+                        <address class="contact-details">
+                            123 Rue du Dojo<br>
+                            75000 Paris<br>
+                            France
+                        </address>
+                        <p class="contact-note">Métro : Ligne 1, Station République</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">📞</div>
+                        <h3 class="contact-title">Téléphone</h3>
+                        <div class="contact-details">
+                            <a href="tel:+33123456789" class="contact-link">01 23 45 67 89</a>
+                            <p class="contact-note">Lun-Ven : 18h-21h<br>Sam : 14h-18h</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">✉️</div>
+                        <h3 class="contact-title">Email</h3>
+                        <div class="contact-details">
+                            <a href="mailto:contact@clubjudo.fr" class="contact-link">contact@clubjudo.fr</a>
+                            <p class="contact-note">Réponse sous 24h</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">🕒</div>
+                        <h3 class="contact-title">Horaires d'Accueil</h3>
+                        <div class="contact-details">
+                            <p>Lundi - Vendredi : 18h00 - 21h00</p>
+                            <p>Samedi : 14h00 - 18h00</p>
+                            <p class="contact-note">Dimanche : Fermé</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section" aria-labelledby="form-title">
+            <div class="container">
+                <div class="contact-form-grid">
+                    <div class="contact-form-content">
+                        <h2 id="form-title" class="section-title">Nous Contacter</h2>
+                        <div class="section-divider"></div>
+                        <p class="form-intro">
+                            Une question ? Un besoin d'information ? N'hésitez pas à nous contacter. 
+                            Nous vous répondrons dans les plus brefs délais.
+                        </p>
+                        
+                        <form class="contact-form" action="https://formsubmit.co/contact@clubjudo.fr" method="POST" aria-labelledby="form-title">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="Nouveau message depuis le site Club de Judo">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="_honey" style="display:none;">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstname" class="form-label">Prénom <span class="required" aria-label="obligatoire">*</span></label>
+                                    <input 
+                                        type="text" 
+                                        id="firstname" 
+                                        name="firstname" 
+                                        class="form-input" 
+                                        required 
+                                        aria-describedby="firstname-help"
+                                        autocomplete="given-name"
+                                    >
+                                    <span id="firstname-help" class="form-help">Votre prénom</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastname" class="form-label">Nom <span class="required" aria-label="obligatoire">*</span></label>
+                                    <input 
+                                        type="text" 
+                                        id="lastname" 
+                                        name="lastname" 
+                                        class="form-input" 
+                                        required 
+                                        aria-describedby="lastname-help"
+                                        autocomplete="family-name"
+                                    >
+                                    <span id="lastname-help" class="form-help">Votre nom de famille</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email <span class="required" aria-label="obligatoire">*</span></label>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        class="form-input" 
+                                        required 
+                                        aria-describedby="email-help"
+                                        autocomplete="email"
+                                        placeholder="votre@email.com"
+                                    >
+                                    <span id="email-help" class="form-help">Votre adresse email</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Téléphone</label>
+                                    <input 
+                                        type="tel" 
+                                        id="phone" 
+                                        name="phone" 
+                                        class="form-input" 
+                                        aria-describedby="phone-help"
+                                        autocomplete="tel"
+                                        placeholder="01 23 45 67 89"
+                                    >
+                                    <span id="phone-help" class="form-help">Optionnel</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Sujet <span class="required" aria-label="obligatoire">*</span></label>
+                                <select id="subject" name="subject" class="form-select" required aria-describedby="subject-help">
+                                    <option value="">Choisir un sujet</option>
+                                    <option value="inscription">Inscription / Cours d'essai</option>
+                                    <option value="information">Demande d'information</option>
+                                    <option value="competition">Compétition</option>
+                                    <option value="stage">Stages et événements</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                                <span id="subject-help" class="form-help">Sélectionnez le sujet de votre message</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age" class="form-label">Âge du futur pratiquant</label>
+                                <select id="age" name="age" class="form-select" aria-describedby="age-help">
+                                    <option value="">Non spécifié</option>
+                                    <option value="4-6">4-6 ans (Éveil Judo)</option>
+                                    <option value="7-12">7-12 ans (Judo Enfants)</option>
+                                    <option value="13-17">13-17 ans (Judo Adolescents)</option>
+                                    <option value="18-49">18-49 ans (Judo Adultes)</option>
+                                    <option value="50+">50+ ans (Judo Santé)</option>
+                                </select>
+                                <span id="age-help" class="form-help">Nous aide à vous orienter vers les bons cours</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message <span class="required" aria-label="obligatoire">*</span></label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form-textarea" 
+                                    rows="5" 
+                                    required 
+                                    aria-describedby="message-help"
+                                    placeholder="Décrivez votre demande, vos questions ou parlez-nous de vos motivations..."
+                                ></textarea>
+                                <span id="message-help" class="form-help">Votre message détaillé</span>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-checkbox">
+                                    <input 
+                                        type="checkbox" 
+                                        id="privacy" 
+                                        name="privacy" 
+                                        class="form-check" 
+                                        required 
+                                        aria-describedby="privacy-help"
+                                    >
+                                    <label for="privacy" class="form-check-label">
+                                        J'accepte que mes données soient utilisées pour répondre à ma demande 
+                                        <span class="required" aria-label="obligatoire">*</span>
+                                    </label>
+                                </div>
+                                <span id="privacy-help" class="form-help">Vos données ne seront jamais partagées avec des tiers</span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    Envoyer le Message
+                                </button>
+                                <p class="form-note">
+                                    <span class="required">*</span> Champs obligatoires
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="contact-map">
+                        <h3 class="map-title">Notre Emplacement</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.276736568275!2d2.3522!3d48.8566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sPlace%20de%20la%20R%C3%A9publique%2C%2075003%20Paris!5e0!3m2!1sfr!2sfr!4v1234567890"
+                                class="map-iframe"
+                                title="Localisation du Club de Judo - 123 Rue du Dojo, Paris"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="map-info">
+                            <h4 class="map-info-title">Accès</h4>
+                            <ul class="map-details">
+                                <li><strong>Métro :</strong> Ligne 1, Station République</li>
+                                <li><strong>Bus :</strong> Lignes 20, 65, 75</li>
+                                <li><strong>Parking :</strong> Place de la République</li>
+                                <li><strong>Vélib :</strong> Stations à proximité</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inscription-section" aria-labelledby="inscription-title">
+            <div class="container">
+                <h2 id="inscription-title" class="section-title">Informations d'Inscription</h2>
+                <div class="section-divider"></div>
+                <div class="inscription-grid">
+                    <div class="inscription-card">
+                        <h3 class="inscription-card-title">Documents Requis</h3>
+                        <ul class="inscription-list">
+                            <li class="inscription-item">✅ Certificat médical de non contre-indication</li>
+                            <li class="inscription-item">✅ Copie d'une pièce d'identité</li>
+                            <li class="inscription-item">✅ 2 photos d'identité récentes</li>
+                            <li class="inscription-item">✅ Formulaire d'inscription complété</li>
+                            <li class="inscription-item">✅ Justificatif de domicile</li>
+                            <li class="inscription-item">✅ Autorisation parentale (mineurs)</li>
+                        </ul>
+                    </div>
+
+                    <div class="inscription-card">
+                        <h3 class="inscription-card-title">Tarifs et Paiement</h3>
+                        <div class="pricing-info">
+                            <div class="price-item">
+                                <span class="price-label">Enfants (4-12 ans) :</span>
+                                <span class="price-value">280€/an</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Ados/Adultes :</span>
+                                <span class="price-value">350€/an</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Judo Santé (50+) :</span>
+                                <span class="price-value">250€/an</span>
+                            </div>
+                        </div>
+                        <p class="pricing-note">
+                            Paiement en 3 fois possible. Licence FFJudo et assurance comprises.
+                        </p>
+                    </div>
+
+                    <div class="inscription-card">
+                        <h3 class="inscription-card-title">Cours d'Essai</h3>
+                        <div class="trial-info">
+                            <p class="trial-description">
+                                Venez découvrir notre dojo et nos méthodes d'enseignement gratuitement.
+                            </p>
+                            <ul class="trial-benefits">
+                                <li>✨ Premier cours entièrement gratuit</li>
+                                <li>✨ Judogi fourni pour l'essai</li>
+                                <li>✨ Accompagnement personnalisé</li>
+                                <li>✨ Aucun engagement</li>
+                            </ul>
+                            <a href="#form-title" class="btn btn-secondary">Réserver mon Essai</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Club de Judo</h3>
+                    <p class="footer-description">
+                        Excellence, tradition et valeurs martiales depuis 30 ans.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <address class="footer-address">
+                        <p>123 Rue du Dojo, 75000 Paris</p>
+                        <p>Tél: <a href="tel:+33123456789">01 23 45 67 89</a></p>
+                        <p>Email: <a href="mailto:contact@clubjudo.fr">contact@clubjudo.fr</a></p>
+                    </address>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Horaires</h3>
+                    <div class="footer-hours">
+                        <p>Lundi - Vendredi: 18h - 21h</p>
+                        <p>Samedi: 14h - 18h</p>
+                        <p>Dimanche: Fermé</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Club de Judo. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
